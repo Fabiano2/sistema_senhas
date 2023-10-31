@@ -1,2 +1,10 @@
 <h1>Painel</h1>
-<h2>{{senha}}</h2>
+<h2>{{senha[0]}}</h2>
+
+<h1>Ultimas chamadas:</h1>
+
+{% for s in chamadas %}
+    {{s[0]}}
+    <br>
+
+{% endfor %}
