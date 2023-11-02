@@ -1,1 +1,10 @@
 <h1>Fila de Senhas</h1>
+{% for s in fila %}
+    {{s[0]}}
+    <br>
+{% endfor %}
+<h2>Senha chamada:</h2>
+{{senha[0]}}
+<form method="POST" action="/fila">
+    <button type="submit" id="btnChamarProximo">Chamar Próximo</button>
+</form>
